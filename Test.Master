@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Test.master.cs" Inherits="WebApp.Test" %>
+
+<!DOCTYPE html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+
+    <%--version 3 modifications--%>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <link rel="stylesheet" media="all" type="text/css" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css" />
+    <%--version 3 modifications--%>
+
+   
+
+    <link href="CSS/Design.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style2 {
+            background-color: orangered;
+            width: 181px;
+        }
+        .auto-style3 {
+            background-color: orangered;
+            color: red;
+            width: 181px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+    <table>
+        <tr>
+            <td class="logo" >
+                <img src="images/caltex.png" />
+            </td>
+            <td class="company">
+                <asp:Label ID="Label1" runat="server" Text="Caltex Gasoline Station" ForeColor="Red" Font-Size="100px" Font-Bold="True"></asp:Label>
+            </td>
+            <td class="side">
+              <%--  <img src="images/total.jpg" />--%>
+            </td>
+        </tr>
+        
+        <tr style="width:1400px">
+            <td colspan="3" class="mid" >
+                
+            <asp:Label ID="lblUser" runat="server" Text="Label" Forecolor="white"></asp:Label>
+            <asp:Label ID="lblPass" runat="server" Text="Label" Forecolor="white"></asp:Label>
+           
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+              <td class="menus">
+                <asp:Menu ID="Menu1" runat="server" ForeColor="White" OnMenuItemClick="Menu1_MenuItemClick" RenderingMode="Table">
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                    </Items>
+                    
+                    <StaticMenuItemStyle VerticalPadding="10px" />
+                    
+                </asp:Menu><br />
+                 
+               
+                  <%--<asp:Menu ID="Menu3" runat="server" ForeColor="White" OnMenuItemClick="Menu3_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem Text="Current Shift" Value="Current"></asp:MenuItem>
+                    </Items>
+                    
+                    <StaticMenuItemStyle VerticalPadding="10px" />
+                    </asp:Menu><br /> 
+
+                  <asp:Menu ID="Menu5" runat="server" ForeColor="White" OnMenuItemClick="Menu5_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem Text="Shift Sales" Value="Current"></asp:MenuItem>
+                    </Items>
+                    
+                    <StaticMenuItemStyle VerticalPadding="10px" />
+                    </asp:Menu><br /> 
+                   
+                  
+                  <asp:Menu ID="Menu4" runat="server" ForeColor="White" OnMenuItemClick="Menu4_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem Text="Daily Sales" Value="Current"></asp:MenuItem>
+                    </Items>
+                    
+                    <StaticMenuItemStyle VerticalPadding="10px" />
+                    </asp:Menu><br /> 
+
+                  <asp:Menu ID="Menu6" runat="server" ForeColor="White" OnMenuItemClick="Menu6_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem Text="Gross Profit" Value="Gross Profit"></asp:MenuItem>
+                    </Items>
+                    
+                    <StaticMenuItemStyle VerticalPadding="10px" />
+                    
+                </asp:Menu><br /> 
+
+
+                  <asp:Menu ID="Menu7" runat="server" ForeColor="White">
+                    <Items>
+                        <asp:MenuItem Text="Inventory" Value="Inventory">
+                            
+                        </asp:MenuItem>
+                    </Items>
+                    
+                    <StaticMenuItemStyle VerticalPadding="10px" />
+                    
+                </asp:Menu><br /> 
+                    
+                  <asp:Menu ID="Menu8" runat="server" ForeColor="White" OnMenuItemClick="Menu8_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem Text="Diesel" Value="Diesel"></asp:MenuItem>
+                    </Items>
+                    
+                    <StaticMenuItemStyle VerticalPadding="5px" HorizontalPadding="10px" />
+                    
+                </asp:Menu><br /> 
+
+                   <asp:Menu ID="Menu9" runat="server" ForeColor="White" OnMenuItemClick="Menu9_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem Text="Premium" Value="Premium"></asp:MenuItem>
+                    </Items>
+                    
+                    <StaticMenuItemStyle VerticalPadding="5px" HorizontalPadding="10px" />
+                    
+                </asp:Menu><br /> 
+
+                   <asp:Menu ID="Menu10" runat="server" ForeColor="White" OnMenuItemClick="Menu10_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem Text="Unleaded" Value="Unleaded"></asp:MenuItem>
+                    </Items>
+                    
+                    <StaticMenuItemStyle VerticalPadding="5px" HorizontalPadding="10px" />
+                    
+                </asp:Menu><br /> --%>
+
+                   <asp:Menu ID="Menu2" runat="server" ForeColor="White" OnMenuItemClick="Menu2_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem Text="Log Out" Value="Log Out"></asp:MenuItem>
+                    </Items>
+                    
+                    <StaticMenuItemStyle VerticalPadding="10px" />
+                    
+                </asp:Menu><br /> 
+
+            </td>
+
+            <td class="bodymain">
+                <asp:ContentPlaceHolder ID="head" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+
+        <tr >
+            <td colspan="3" class="footer">
+
+            </td>
+        </tr>
+
+    </table>
+    </form>
+</body>
+</html>
