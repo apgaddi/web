@@ -1,0 +1,30 @@
+﻿body {
+    
+}
+
+#top{
+    background-color:orangered;
+    color:whitesmoke;
+    text-align:center;
+    border-radius:4px;
+
+
+}
+
+#navigation{
+    float:left;
+    height:auto;
+    
+      
+   }
+
+#main{
+   height:1000px;
+}
+
+#footer{
+    background-color:orangered;
+    text-align:center;
+    border-radius:6px;
+    
+}

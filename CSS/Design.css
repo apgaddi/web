@@ -1,0 +1,57 @@
+﻿body {
+    
+}
+
+.logo{
+    width:180px;
+    height:120px;
+}
+
+.company{
+    width:900px;
+    padding-left:20px;
+    
+}
+
+.side{
+    width:320px;
+}
+
+.mid{
+background-color:orangered;
+width:1400px;
+font-size:x-large;
+color:red;
+padding-left:20px;
+}
+.menus{
+    background-color:orangered;
+    width:180px;
+    padding-left:20px;
+   
+}
+.bodymain{
+    width:1220px;
+    
+}
+
+.bodymain2{
+    padding-left:250px;
+    align-content:center;
+    align-items:center;
+    align-self:center;
+    color:green;
+    
+}
+
+.footer{
+    background-color:orangered;
+    height:50px;
+    width:1400px;
+}
+
+.intro{
+    color:darkblue;
+    padding-left:20px;
+}
+
